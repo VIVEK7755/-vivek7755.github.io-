@@ -1,0 +1,761 @@
+/* styles for navigation bar */
+/* to display the div in navbar in a row */
+/*  font syle be modern best for portfolio */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Monoton&family=Rubik:ital,wght@0,300;1,300&display=swap');
+
+
+
+html, body {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Disable scrolling */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+main {
+  flex: 1; /* Grow to fill available space */
+  overflow-y: auto; /* Allow main content to scroll if needed */
+}
+
+footer {
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #33333300;
+  color: rgb(0, 0, 0);
+  margin: 10px 30px 0 30px;
+}
+
+nav{
+  position: relative;
+}
+
+.navbar img {
+  margin: 20px;
+  width: 60px;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.logo {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+/*  what to change styling inside name class only for the paragraph */
+
+.name p{
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Fredoka', cursive;
+  color: #a30d0d !important;
+}
+
+.initials h1 {
+  font-family: "Monoton", cursive;
+  margin: 0 10px 0 0;
+  font-size: 40px;
+  background-color: #1b6464;
+  border-radius: 20%;
+  font-weight: 400;
+  color:white;
+  padding: 5px;
+}
+
+.name h2 {
+  
+  margin: 0;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.menu li {
+  padding: 0 20px 0 20px;
+  list-style: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: solid;
+  border-left:1px solid #333;
+}
+
+.menu a {
+  padding-left: auto;
+  text-decoration: none;
+  color: black;
+}
+
+#portfolio, #resume, #interests {
+  display: none;
+}
+
+.hero {
+  /* background-image: url('1.jpg'); */
+  background-size: cover;
+  background-position: center;
+  /* color: #fff; */
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 80px;
+  margin: 10px 0 10px 0;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 22px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.hero p.small {
+  font-style: oblique;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.hero .cta-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 18px;
+  background-color: #ff8000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .cta-btn:hover {
+  background-color: #ff9000;
+}
+
+.text{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.profile-image {
+  width: 480px;
+  height: 480px;
+  margin: 0 auto 20px;
+  overflow: hidden; /* Ensure the border radius works correctly */
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  margin: auto;
+  padding: auto;
+  position:relative;
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Set section height to full viewport height */
+}
+
+.social-share {
+  display: flex;
+  justify-content: space-evenly;
+  animation: fadeIn 1s ease;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.share-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #1b6464;
+  border-radius: 50%;
+  margin: 5px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.share-icon:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#portfolio h2 {
+  font-size: 40px;
+  margin: 20px;
+  text-align: center;
+}
+
+ .grid .card p{
+  text-transform:  uppercase;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.search-container {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-input {
+  padding: 10px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  width: 300px; /* Adjust width as needed */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #ff8000; /* Change border color on focus */
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #217a7a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: #0f3636;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+  justify-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.336);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  min-width: 300px; /* Adjust as needed */
+  max-width: min-content;
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 5px;
+  color: #333;
+  text-transform: capitalize;
+}
+
+/* .card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+} */
+
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff8000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #ff9000;
+}
+
+/* Add a subtle card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+section.active {
+  display: block; /* Show section when it has the active class */
+  /* Add additional styling as needed */
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: flex-start; */
+  height: 100%;
+  overflow: hidden;  
+}
+
+.containers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.img1{
+  width: 100%;
+  text-align:right;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.img1 img{
+  width: 70%;
+  height: 60vh;
+}
+
+.grid_skillbar{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 25px;
+}
+
+.resume{
+  height: 100%;
+  overflow: hidden;
+}
+
+.skills-section {
+  margin: 0 50px 50px 0;
+}
+
+.resume p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+.resume h2 {
+  margin-top: 0;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.skills-section h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.skills-section li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #217a7a;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-bar {
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skill-progress {
+  width: 100%;
+  background-color: #6edada; 
+  height: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #259797;
+  border-radius: 5px;
+  transition: width 1s ease;
+}
+
+.interests{
+  height: 100%;
+  overflow: hidden;
+}
+
+.interests p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 50px
+}
+
+.next-section-btn {
+  position: fixed;
+  bottom: 50%;
+  right: 50px;
+  background-color: #ff8000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.next-section-btn i {
+  margin-top: 5px;
+}
+
+.prev-section-btn {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  left: 50px;
+  /* right: 20px; */
+  background-color: #ff8000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999; /* Ensure it's above other content */
+  transform: rotate(180deg);
+}
+
+.prev-section-btn i {
+  margin-top: 5px;
+}
+
+footer {
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.cr {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
+
+/* Add a media query for small screens */
+/* sections should be responsive */
+/* also disbale overflow for body */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .menu li {
+    padding: 10px 0;
+    border-left: none;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero p.small {
+    font-size: 16px;
+  }
+
+  .hero .cta-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .profile-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .grid {
+    grid-template-columns: auto auto;
+  }
+
+  .card {
+    min-width: 200px;
+  }
+
+  .next-section-btn {
+    right: 20px;
+  }
+
+  .prev-section-btn {
+    left: 20px;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  #about ,#portfolio, #resume, #interests {
+    overflow: auto;
+    height: fit-content;
+    width: auto;
+  }
+}
+
+/* Add a media query for small screens */
+/* sections should be responsive */
+/* also disbale overflow for body */
+@media (max-width: 375px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu ul {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .menu li {
+    padding: 10px 0;
+    border-left: none;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero p.small {
+    font-size: 14px;
+  }
+
+  .hero .cta-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+  }
+
+  .card {
+    min-width: 150px;
+  }
+
+  .next-section-btn {
+    right: 20px;
+  }
+
+  .prev-section-btn {
+    left: 20px;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  #about ,#portfolio, #resume, #interests {
+    overflow: auto;
+    height: fit-content;
+    width: auto;
+  }
+}
+
+/* Add a media query for small screens */
+/* sections should be responsive */
+/* also disbale overflow for body */
+@media (max-width: 425px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu ul {
+    width: 100%;
+    justify-content: space-evenly;
+    padding-left: 20px;
+  }
+
+  .menu li {
+    font-size: 15px;
+    padding: 10px ;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero p.small {
+    font-size: 14px;
+  }
+
+  .hero .cta-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .grid {
+    grid-template-columns: auto;
+  }
+
+  .card {
+    min-width: 150px;
+  }
+
+  .next-section-btn {
+    right: 20px;
+  }
+
+  .prev-section-btn {
+    left: 20px;
+  }
+
+  body {
+    overflow: auto;
+  }
+
+  #about ,#portfolio, #resume, #interests {
+    height: auto;
+    width: auto;
+    align-items: center;
+  }
+}
