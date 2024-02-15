@@ -668,10 +668,12 @@ footer p {
   }
 
   .next-section-btn {
+    top: 20px;
     right: 20px;
   }
 
   .prev-section-btn {
+    top: 20px;
     left: 20px;
   }
 
