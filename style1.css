@@ -574,11 +574,13 @@ footer p {
   .menu ul {
     width: 100%;
     justify-content: space-evenly;
+    padding-left: 20px;
+    margin-bottom: 10px;
   }
 
   .menu li {
-    padding: 10px 0;
-    border-left: none;
+    font-size: 15px;
+    padding: 10px ;
   }
 
   .hero h1 {
@@ -601,17 +603,45 @@ footer p {
   }
 
   .profile-image {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    margin: 8px auto 8px
+  }
+
+  #portfolio h2 {
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  #search-input {
+    width: 200px;
+  }
+
+  .filter-container {
+    margin-bottom: 15px;
+  }
+
+  .filter-btn {
+    padding: 8px 15px;
+    font-size: 14px;
   }
 
   .grid {
     grid-template-columns: auto auto;
-    gap: 20px;
+    gap: 15px;
   }
 
   .card {
-    min-width: 200px;
+    min-width: 150px;
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .grid .card p {
+    font-size: 20px;
   }
 
   .next-section-btn {
@@ -632,6 +662,34 @@ footer p {
     overflow: auto;
     height: fit-content;
     width: auto;
+  }
+
+  .skills-section{
+    margin: 0 20px 20px 10px;
+  }
+
+  .grid_skillbar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .skill-name {
+    font-size: 15px;
+  }
+
+  .img1 img{
+    width: 125%;
+    height: 70vw;
+  }
+
+  .img1{
+    width: 112%;
+    text-align:right;
+    overflow: hidden;
+    margin: 5px;
   }
 
 
