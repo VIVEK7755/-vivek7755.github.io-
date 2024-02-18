@@ -84,6 +84,21 @@ nav{
   padding: 5px;
 }
 
+.logo .initials a {
+  text-decoration: none;
+  color: white
+}
+
+.logo .name p a {
+  text-decoration: none;
+  color: #a30d0d !important;
+}
+
+.logo .name h2 a {
+  text-decoration: none;
+  color: #333;
+}
+
 .name h2 {
   
   margin: 0;
