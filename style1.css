@@ -559,6 +559,18 @@ footer p {
     align-items: flex-start;
   }
 
+  .initials h1 {
+    font-size: 30px;
+  }
+
+  .name h2 {
+    font-size: 25px;
+  }
+
+  .name p{
+    font-size: 15px;
+  }
+
   .menu ul {
     width: 100%;
     justify-content: space-evenly;
@@ -575,10 +587,12 @@ footer p {
 
   .hero p {
     font-size: 18px;
+    margin-bottom: 15px;
   }
 
   .hero p.small {
     font-size: 16px;
+    margin-bottom: 15px;
   }
 
   .hero .cta-btn {
@@ -593,6 +607,7 @@ footer p {
 
   .grid {
     grid-template-columns: auto auto;
+    gap: 20px;
   }
 
   .card {
@@ -617,6 +632,27 @@ footer p {
     overflow: auto;
     height: fit-content;
     width: auto;
+  }
+
+
+  .resume h2 {
+    font-size: 25px;
+  }
+
+  .resume p {
+    font-size: 18px;
+  }
+
+  .skills-section h3 {
+    font-size: 20px;
+  }
+
+  .skills-section ul {
+    font-size: 15px;
+    gap: 5px;
+  }
+  .skills-section li {
+    margin: 0;
   }
 }
 
@@ -708,6 +744,7 @@ footer p {
     width: 100%;
     justify-content: space-evenly;
     padding-left: 20px;
+    margin-bottom: 10px;
   }
 
   .menu li {
@@ -735,14 +772,43 @@ footer p {
   .profile-image {
     width: 200px;
     height: 200px;
+    margin: 8px auto 8px
+  }
+
+  #portfolio h2 {
+    font-size: 25px;
+    margin: 10px;
+  }
+
+  #search-input {
+    width: 200px;
+  }
+
+  .filter-container {
+    margin-bottom: 15px;
+  }
+
+  .filter-btn {
+    padding: 8px 15px;
+    font-size: 14px;
   }
 
   .grid {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
+    gap: 15px;
   }
 
   .card {
     min-width: 150px;
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 15px;
+  }
+
+  .grid .card p {
+    font-size: 20px;
   }
 
   .next-section-btn {
@@ -763,5 +829,33 @@ footer p {
     height: auto;
     width: auto;
     align-items: center;
+  }
+
+  .skills-section{
+    margin: 0 20px 20px 10px;
+  }
+
+  .grid_skillbar{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .skill-name {
+    font-size: 15px;
+  }
+
+  .img1 img{
+    width: 125%;
+    height: 70vw;
+  }
+
+  .img1{
+    width: 112%;
+    text-align:right;
+    overflow: hidden;
+    margin: 5px;
   }
 }
