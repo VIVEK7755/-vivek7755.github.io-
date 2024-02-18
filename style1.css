@@ -574,13 +574,15 @@ footer p {
   .menu ul {
     width: 100%;
     justify-content: space-evenly;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 10px;
   }
 
   .menu li {
     font-size: 15px;
     padding: 10px ;
+    border-style: none;
   }
 
   .hero h1 {
@@ -629,6 +631,7 @@ footer p {
   .grid {
     grid-template-columns: auto auto;
     gap: 15px;
+    margin-bottom: 10px
   }
 
   .card {
@@ -801,7 +804,8 @@ footer p {
   .menu ul {
     width: 100%;
     justify-content: space-evenly;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 10px;
   }
 
@@ -854,6 +858,7 @@ footer p {
   .grid {
     grid-template-columns: auto auto;
     gap: 15px;
+    margin-bottom: 10px
   }
 
   .card {
