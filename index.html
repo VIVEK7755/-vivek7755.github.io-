@@ -111,6 +111,18 @@
         <section id="resume" class="resume" aria-label="Resume">
             <h2>Resume</h2>
             <p>Download my resume <a href="VIVEK Resume.pdf" download>here</a>.</p>
+
+            <!-- Button to view modal -->
+            <button class="btn btn-primary" id="view-resume-btn">View Resume</button>
+
+            <!-- Modal structure -->
+            <div id="resume-modal" class="modal">
+                <span class="close-btn">&times;</span>
+                <div class="modal-content">
+                    <iframe id="pdf-viewer" src="VIVEK Resume.pdf" frameborder="0" width="100%" height="600px"></iframe>
+                </div>
+            </div>
+
             <div class="containers">
                 
                 <!-- Add skills/expertise section -->
